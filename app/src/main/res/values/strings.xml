@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SoundFont Example</string>
+
+    <string name="button_general_next">Next</string>
+    <string name="button_general_prev">Previous</string>
+    <string name="button_general_ok">OK</string>
+    <string name="button_general_cancel">Cancel</string>
+    <string name="button_general_add">Add</string>
+
+    <string name="button_remove">Remove</string>
+    <string name="button_keep">Keep</string>
+    <string name="button_testTone">Test Tone</string>
+
+    <string name="text_dummy"> </string>
+    <string name="title_midi">MIDI</string>
+    <string name="config_midi_input">Input</string>
+    <string name="config_midi_output">Output</string>
+    <string name="config_midi_thru">Thru</string>
+
+    <string name="config_group_fluid">FluidSynth</string>
+    <string name="config_fluid_fontfile">SoundFont File</string>
+    <string name="conifg_group_midi">MIDI Device</string>
+    <string name="sfz_lowlatency">Low Latency</string>
+
+    <string name="config_group_program">Select Program</string>
+</resources>

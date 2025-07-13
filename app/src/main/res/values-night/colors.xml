@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_alpha">#00FFFFFF</color>
+    <color name="color_push">#FF008080</color>
+    <color name="primal1_night">#FFFFFFFF</color>
+    <color name="primal1_white">#FF400090</color>
+    <color name="primal1_variant">#FFFFFFFF</color>
+    <color name="second2">#FF03DAC5</color>
+    <color name="second2_night">#FF018786</color>
+    <color name="app_back1">#FF102060</color>
+    <color name="black">#FF0000F0</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="selected_char">#FF88FF88</color>
+    <color name="light_blue_400">#FF29B6F6</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="gray_400">#FFBDBDBD</color>
+    <color name="gray_600">#FF757575</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="color_list_back_focus">#FF4040E0</color>
+    <color name="color_list_back">#FF101040</color>
+    <color name="color_list_stroke">#FFFFFFFF</color>
+    <color name="color_list_stroke_focus">#FF005522</color>
+    <color name="color_head">#FF30a080</color>
+    <color name="color_head2">#FFE0FFE0</color>
+    <color name="color_head_text">#FF449944</color>
+    <color name="color_button">#FF306090</color>
+    <color name="color_button_error">#FFFF7777</color>
+    <color name="color_text">#FFFFFFFF</color>
+    <color name="color_buttonText">#DDDDDD</color>
+    <color name="color_button_disabled">#FF444444</color>
+    <color name="color_buttonText_disabled">#FFAAAAAA</color>
+    <color name="color_paper">#FFDDDDFF</color>
+</resources>

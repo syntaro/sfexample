@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.FSSample" parent="Theme.AppCompat.Light.DarkActionBar"/>
+</resources>
