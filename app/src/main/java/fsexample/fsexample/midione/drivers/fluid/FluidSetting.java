@@ -85,9 +85,5 @@ public class FluidSetting extends MXWatchableGroup  {
         if (_readingJson) {
             return;
         }
-        FluidSetting setting = FluidSetting.getInstance();
-        if (param == setting._soundFont || param == setting._soundFontLowLatency) {
-            setting.loadFont(true);
-        }
     }
 }

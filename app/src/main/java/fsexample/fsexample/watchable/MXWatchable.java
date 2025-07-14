@@ -153,14 +153,14 @@ public class MXWatchable<T> implements UserChoiceElement {
 
     protected T _rollbackValue;
 
-    public void saveRollbackPoint() {
+    public void doUISaveState() {
         _rollbackValue = getValue();
     }
-
-    public void doRollback() {
+    public void doUIRollbackState() {
         setValue(_rollbackValue);
     }
 
+    public void doUIAfterCOmmitState() {}
     Button[] _listAcceptButtons = null;
 
     public void checkAcceptableAndEnableButton() {

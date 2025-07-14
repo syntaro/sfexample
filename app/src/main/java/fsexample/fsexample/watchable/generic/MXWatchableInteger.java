@@ -122,7 +122,7 @@ public class MXWatchableInteger extends MXWatchable<Integer> {
     int _rollbackSendoffset;
 
     @Override
-    public void saveRollbackPoint() {
+    public void doUISaveState() {
         Log.e(Constant.TAG, "set rollback from " + getValue());
         _rollbackMin = getMin();
         _rollbackMax = getMax();
@@ -131,7 +131,7 @@ public class MXWatchableInteger extends MXWatchable<Integer> {
     }
 
     @Override
-    public void doRollback() {
+    public void doUIRollbackState() {
         Log.e(Constant.TAG, "rollback from " + getValue() + "-> " + _rollbackValue);
         _min = _rollbackMin;
         _max = _rollbackMax;

@@ -55,11 +55,12 @@ public class MXWatchableGroupView extends RecyclerView {
         }
         builder.setView(view);
 
-        clicked.saveRollbackPoint();
+        clicked.doUISaveState();
         builder.setPositiveButton(R.string.button_general_ok,(dialogInterface, i) -> {
+            clicked.doUIAfterCOmmitState();
         });
         builder.setNegativeButton(R.string.button_general_cancel, (dialogInterfface, i) -> {
-            clicked.doRollback();
+            clicked.doUIRollbackState();
         });
         builder.setOnDismissListener(dialogInterface -> {
         });

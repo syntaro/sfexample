@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.fonts.Font;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -27,7 +26,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 
 import fsexample.fsexample.common.AppBroadcast;
 import fsexample.fsexample.R;
@@ -47,7 +45,6 @@ import fsexample.fsexample.userchoice.UserChoiceElement;
 import fsexample.fsexample.userchoice.UserChoiceView;
 import fsexample.fsexample.watchable.MXWatchable;
 import fsexample.fsexample.watchable.MXWatchableGroup;
-import fsexample.fsexample.watchable.MXWatchableGroupView;
 import fsexample.fsexample.watchable.MXWatchableListener;
 import fsexample.fsexample.watchable.withapp.MXWatchableSoundFontName;
 
@@ -324,12 +321,13 @@ public class MidiSelectorFragment extends Fragment {
                     View view = param.createCustomEditor(context);
                     if (view != null) {
                         builder.setTitle(param.getNameRes());
-                        param.saveRollbackPoint();
+                        param.doUISaveState();
                         builder.setView(view);
                         builder.setPositiveButton(R.string.button_general_ok, (dialog, which) -> {
+                            param.doUIAfterCOmmitState();
                         });
                         builder.setNegativeButton(R.string.button_general_cancel, (dialog, which) -> {
-                            param.doRollback();
+                            param.doUIRollbackState();
                         });
                         AlertDialog dialog = builder.show();
                     }

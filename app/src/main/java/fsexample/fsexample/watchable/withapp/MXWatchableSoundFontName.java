@@ -5,6 +5,7 @@ import android.view.View;
 
 import java.util.ArrayList;
 
+import fsexample.fsexample.midione.drivers.fluid.FluidSetting;
 import fsexample.fsexample.midione.drivers.fluid.FontFileEntry;
 import fsexample.fsexample.midione.drivers.fluid.FontFileManager;
 import fsexample.fsexample.userchoice.UserChoiceElement;
@@ -20,6 +21,10 @@ public class MXWatchableSoundFontName extends MXWatchable<String> {
         return _value;
     }
     UserChoiceView _view;
+
+    public void doUIAfterCommitState() {
+        FluidSetting.getInstance().loadFont(false);
+    }
 
     public View createCustomEditor(Context context) {
         _view = new UserChoiceView(context);

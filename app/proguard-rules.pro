@@ -24,8 +24,3 @@
 -keep class android.support.v8.renderscript.** { *; }
 -keep class androidx.renderscript.** { *; }
 -keep class fsexample.fsexample.midione.drivers.fluid.JFluid { * ; }
--keep class com.google.android.gms.** { *; }
--keep public class com.google.android.gms.**
--dontwarn com.google.android.gms.**
--keep class android.support.v7.** { *; }
--keep interface android.support.v7.** { *; }
