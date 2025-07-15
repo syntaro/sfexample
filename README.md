@@ -1,5 +1,5 @@
 # sfexample
-Android NDK Example Code which using Use FluidSynth Project's "libfluisynth.so"
+Android NDK Example Code which using FluidSynth Project's "libfluisynth.so"
 
 Please Use this for Only Test For Development.
 The source code is not very clean. (I wish If I could have more time)
